@@ -21,10 +21,17 @@
         }
 
         table{
+            position: relative; /*adicionado*/
             border-collapse: collapse;
             height: 20px;
             width: 300px;
             margin: auto;
+        }
+
+        thead > tr > th{    /*adicionado*/
+            position: sticky; /*adicionado*/
+            top: -1px;  /*adicionado*/
+            background-color: rgb(119, 119, 119); /*adicionado*/ 
         }
 
         td,th{
@@ -212,6 +219,30 @@
             tbody > tr:nth-child(odd){  //impares
             background-color: lightgray;
             }
+        </p>
+    </pre>
+    <h2>Título da Tabela Fixo</h2>
+    <pre>
+        <p>
+        Elemento sticky - É um elemento que se comporta como 'position relative'. Mas, quando o usuário rola a página e o elemento atinge um limite definido pelo top, left, right ou bottom, ele passa a se comportar como fixed, "grudando" nessa posição.
+        </p>
+    </pre>
+    <h2>O que foi acrescentado para ser criar o Efeito?</h2>
+    <pre>
+        <p>
+        table{
+            position: relative; --adicionado--
+            border-collapse: collapse;
+            height: 20px;
+            width: 300px;
+            margin: auto;
+        }
+
+        thead > tr > th{      --adicionado--
+            position: sticky; --adicionado--
+            top: -1px;        --adicionado--
+            background-color: rgb(119, 119, 119) ; --adicionado--
+        }
         </p>
     </pre>
 </body>
